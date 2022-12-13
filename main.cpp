@@ -3,13 +3,6 @@
 #include "./header/Copac.h"
 #include "./header/Floare.h"
 int main() {
-    /*
-    auto copac1 = std::make_shared<Copac>("SuperMar", 100, 5);
-    Gradina::addPlant(copac1);
-    Gradina::addPlant(copac1);
-    Gradina::Afisare();
-     */
-
 bool Meniu = true;
 while(Meniu){
     int input;
@@ -19,7 +12,9 @@ while(Meniu){
     std::cout<<"Pentru citirea a n plante apasati 3"<<std::endl;
     std::cout<<"Pentru a iesi 4"<<std::endl;
     std::cin>>input;
-
+    while(input < 1 || input > 4){
+        std::cin>>input;
+    }
     switch (input) {
         case 1:{
             int opt1 = -1;
