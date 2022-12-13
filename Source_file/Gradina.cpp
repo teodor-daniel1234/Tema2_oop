@@ -2,7 +2,6 @@
 // Created by Teodor-Daniel on 12.12.2022.
 //
 #include "../header/Gradina.h"
-
 std::vector<std::shared_ptr<Plant>> Gradina::Plants;///downcast
 
 void Gradina::addPlant(std::shared_ptr<Plant> plant) {
@@ -27,7 +26,7 @@ std::shared_ptr<Plant> Gradina::Encrypt(int key) {
     std::ifstream f("Parole.out");
     if (f.is_open()) {
         std::string line;
-        // Read each line from the input file and write it to the output file
+
         while (getline(f, line)) {
             if(line.length() < 4){
                 throw Short();

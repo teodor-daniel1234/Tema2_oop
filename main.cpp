@@ -4,11 +4,13 @@
 #include "./header/Floare.h"
 int main() {
 
-    auto copac1 = std::make_shared<Copac>("Mar", 100, 5);
-    // copac1->Fotosinteza();
-    // copac1->GetInaltime();
+    auto copac1 = std::make_shared<Copac>("SuperMar", 100, 5);
+     copac1->Fotosinteza();
+     copac1->GetInaltime();
     auto floare1 = std::make_shared<Floare>("Lalea", 2, 4);
-    //copac1->SetInaltime(100);
+    copac1->SetInaltime(100);
+    floare1->SetPetale(5);
+    floare1->GetPetale();
     Gradina::addPlant(copac1);
     Gradina::addPlant(floare1);
     try{
@@ -16,10 +18,8 @@ int main() {
     } catch (const Short &err){
         std::cout<<err.what()<<std::endl;
     }
-
+/*
     std::ifstream f("Parole.out");
-
-    // Check if the input and output files are open
     if (f.is_open()) {
         std::string line;
 
@@ -28,6 +28,7 @@ int main() {
             std::cout << line << std::endl;
         }
     }
+   */
     try {
         Gradina::Find_name("Mar");
 
