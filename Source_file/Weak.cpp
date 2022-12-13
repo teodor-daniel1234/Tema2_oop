@@ -3,9 +3,9 @@
 //
 #include "../header/Weak.h"
 const char *Weak::what() const noexcept {
-    return "Nu e asa cv";
+    return "Nu exista acest nr de frunze";
 }
 
 void Weak::Print(std::ostream &os) const {
-    os<<"Nu avem";
+    os<<"Nu exista acest nr de frunze";
 }

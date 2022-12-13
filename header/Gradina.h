@@ -18,11 +18,13 @@ public:
     Gradina() = delete;
     static void addPlant(std::shared_ptr<Plant> plant);
 
-    static std::shared_ptr<Plant> Encrypt(int key);///encrypt
+    static std::shared_ptr<Plant> Afisare();
+
+    ///static std::shared_ptr<Plant> Encrypt(int key);///encrypt
 
     static std::shared_ptr<Plant> Find_name(const std::string &name);///Gasesc dupa un nume
 
-    static std::shared_ptr<Plant> Find_by_power(int nr);///
+    static std::shared_ptr<Plant> Find_by_frunze(int nr);///
 
 };
 #endif //OOP_GRADINA_H

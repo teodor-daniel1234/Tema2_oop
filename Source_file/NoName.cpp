@@ -6,9 +6,9 @@
 
 
 const char *NoName::what() const noexcept {
-    return "Nu e asa cv";
+    return "Nu exista aceast nume de planta";
 }
 
 void NoName::Print(std::ostream &os) const {
-    os<<"Nu avem";
+    os<<"Nu exista aceast nume de planta";
 }
