@@ -6,12 +6,12 @@ int main() {
 bool Meniu = true;
 while(Meniu){
     int input;
-    std::cin>>input;
     std::cout<<"MAIN MENU:"<<std::endl;
     std::cout<<"Pentru operatii cu copaci apasati 1"<<std::endl;
     std::cout<<"Pentru operatii cu flori apasati 2"<<std::endl;
     std::cout<<"Pentru citirea a n plante apasati 3"<<std::endl;
     std::cout<<"Pentru a iesi 4"<<std::endl;
+    std::cin>>input;
     while(input < 1 || input > 4){
         std::cout<<"Input invalid";
         std::cin>>input;
